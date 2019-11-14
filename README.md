@@ -25,3 +25,8 @@ To this:
 ![](https://i.imgur.com/kHkKnC7.png)
 
 Finally load your wallet. Wasabi will think that the wallet was loaded in the `TestNet` last time, so it will think it does not have a wallet cache built for the `Main` network, so it will clear the cache and build it again.
+
+### Update (2019-11-14)
+
+A new Bitcoin Core bug has been uncovered that may have resulted in the Wasabi coordinator missing to build some client side filters. At this point it's not clear if the bug is regtest specific or also happens on the mainnet. Our investigation and workaround is ongoing.
+https://github.com/bitcoin/bitcoin/issues/17451, https://github.com/zkSNACKs/WalletWasabi/issues/1741
