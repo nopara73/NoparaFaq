@@ -30,3 +30,7 @@ Finally load your wallet. Wasabi will think that the wallet was loaded in the `T
 
 A new Bitcoin Core bug has been uncovered that may have resulted in the Wasabi coordinator missing to build some client side filters. At this point it's not clear if the bug is regtest specific or also happens on the mainnet. Our investigation and workaround is ongoing.
 https://github.com/bitcoin/bitcoin/issues/17451, https://github.com/zkSNACKs/WalletWasabi/issues/1741
+
+### Update (2019-11-22)
+
+In PR https://github.com/zkSNACKs/WalletWasabi/pull/2599 we fixed the spent issue. (It doesn't yet run against the mainnet or the testnet yet, because that needs deployment of this PR.)
