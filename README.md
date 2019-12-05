@@ -1,6 +1,6 @@
 # nopara73 - Frequently Asked Questions
 
-## "spent" coin status in Wasabi
+## [ARCHIVED] "spent" coin status in Wasabi
 
 The "spent" coin status is a symptom of corrupted wallet state. Currently this is the largest known bug in Wasabi Wallet. I estimate this affects about 1-5% of users. This issue was introduced to Wasabi with the [v1.1.4 release](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.4) in April, 2019 by adding a wallet cache, that resulted in 12 times faster wallet load. It was [thought to be fixed](https://old.reddit.com/r/WasabiWallet/comments/c2hco8/announcement_spent_coin_and_lost_unconfirmed/) in June by adding an autocorrection mechanism, but some users are still reporting this issue, so it is not fixed.  
 
@@ -34,3 +34,7 @@ https://github.com/bitcoin/bitcoin/issues/17451, https://github.com/zkSNACKs/Wal
 ### Update (2019-11-22)
 
 In PR https://github.com/zkSNACKs/WalletWasabi/pull/2599 we fixed the spent issue. (It doesn't yet run against the mainnet or the testnet yet, because that needs deployment of this PR.)
+
+### Update (2019-12-05)
+
+With v1.1.10 Release Candidate the spent issue seems to be completely gone: https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10rc1
